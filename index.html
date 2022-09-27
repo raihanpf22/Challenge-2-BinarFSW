@@ -25,6 +25,7 @@
         #faq{
           text-align: center;
         }
+       
         
     }
 
@@ -41,6 +42,7 @@
         #why-us-1, #why-us-2, #why-us-3, #why-us-4{
           width:100% !important;
         }
+        
     }
 </style>  
 </head>
@@ -61,16 +63,27 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            
+            <div class="offcanvas-header">
+            <div class="offcanvasRightLabel"><a
+            class="navbar-brand text-white text-center"
+            href="#"
+            style="background: #0d28a6"
+            >Binar Car rental</a
+          ></div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-3">
               <li class="nav-item px-3">
                 <a class="nav-link active" href="#">Our Services</a>
               </li>
@@ -91,8 +104,13 @@
                   >Register</a
                 >
               </li>
-            </ul>
+            </ul> 
+              </div>
+            
+            </div>
+
           </div>
+          
         </div>
       </nav>
 
@@ -302,13 +320,15 @@
       <h2 class="fw-bold text-center">Testimonial</h2>
       <p class="text-center">Berbagai review positif dari para pelanggan kami</p>
     </div>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="d-flex justify-content-center">
+    
+    <div id="carouselExampleInterval" class="carousel slide w-sm-50" itemid="carousel" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./tetimonial-assets/testi (1).png" class="d-block w-100" alt="...">
+        <img src="./tetimonial-assets/testi (2).png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="./tetimonial-assets/testi.png" class="d-block w-100" alt="...">
+        <img src="./tetimonial-assets/testi (2).png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
         <img src="./tetimonial-assets/testi (2).png" class="d-block w-100" alt="...">
@@ -322,6 +342,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
   </div>
 
   <!-- CTA Banner -->
@@ -441,7 +462,7 @@
 
     <div style="text-align: left !important;"style="margin-bottom: 20px;">
       <p>Connect with us</p>
-      <div class="row row-cols-5" >
+      <div class="row row-cols-5 " >
         <img src="./footer-assets/icon_facebook.svg" alt="" id="icon-footer-1">
         <img src="./footer-assets/icon_instagram.svg" alt="" id="icon-footer-2">
         <img src="./footer-assets/icon_twitter.svg" alt="" id="icon-footer-3">
